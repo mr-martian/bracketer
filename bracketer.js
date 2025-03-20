@@ -32,7 +32,7 @@ function redraw_tree() {
 	} else {
 	    text.push('');
 	}
-	let i = parseInt($(this).data('index'));
+	let i = parseInt($(this).data('idx'));
 	if (!isNaN(i)) {
 	    num_update[i] = index;
 	}

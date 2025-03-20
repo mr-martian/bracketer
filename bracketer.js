@@ -199,5 +199,12 @@ $(function() {
 	$('<tr><td class="text"><span class="editable">Enter text</span></td></tr>').appendTo($('#doc'));
 	redraw_tree();
     });
+    $('#delarc').on('click', function() {
+	let td = $('.highlighted');
+	if (td.length == 1 && td.data('field') == 'center') {
+	    ARCS.splice(parseInt(td.data('idx')), 1);
+	    redraw_tree();
+	}
+    });
     redraw_tree();
 });

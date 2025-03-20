@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bracketer</title>
+    <script type="text/javascript" src="vendor/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="bracketer.js"></script>
+<style>
+  .space:hover {
+      background-color: gold;
+      border-left: 1em solid gold;
+  }
+  .vertical {
+      border-left: 3px solid black;
+      margin-left: 49%;
+      margin-right: 49%;
+      min-height: 1em;
+  }
+  .horizontal {
+      border-top: 3px solid black;
+      margin-top: 49%;
+      margin-bottom: 49%;
+      min-width: 1em;
+  }
+  td {
+      text-align: center;
+      padding: 0px;
+  }
+  td.text {
+      text-align: left;
+  }
+  td .editable {
+      border: 1px dashed gray;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+  }
+  td.text .editable {
+      border: 0px;
+  }
+  td.highlighted {
+      background-color: yellow;
+  }
+  .center:hover {
+      background-color: green;
+  }
+</style>
+  </head>
+  <body>
+    <table id="doc">
+      <tr>
+	<td class="text" data-index="0">
+	  <span class="editable"><span>Enter</span><span class="space"> </span><span>text</span></span>
+	</td>
+      </tr>
+    </table>
+    <button id="addrow">Add row</button>
+  </body>
+</html>
